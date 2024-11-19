@@ -1,0 +1,75 @@
+
+
+nav {
+  margin-bottom: 0;
+}
+
+main {
+  margin-top: 0;
+}
+.navbar-violeta {
+    background-color: #6B4E71; /* Fondo violeta */
+    
+  } 
+
+
+ .main-color{
+    background-color: #C2B2B4;
+ } 
+
+ .footer-color{
+ background-color: #53687E;
+ }
+ .line {
+  background-color: #e0dfdf;
+  height: 4px;
+  width: 100px;
+}
+
+
+
+/*CARDS*/
+
+
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el icono solo cuando el ratón pasa sobre la tarjeta */
+.card:hover .plus {
+  opacity: 1;
+}
+
+
+.card {
+  transition: all 300ms ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b;
+  transform: scale(1.05); /* Escalar un poco la tarjeta */
+}
+
+/* Capa de oscurecimiento */
+.card:hover .card-img-top {
+  opacity: 0.3; /* Hace que la imagen se oscurezca */
+}
+  /* 
+  .navbar-violeta a{
+    color: white;
+  }
+  
+  .navbar-violeta .nav-link {
+    color: #fff; /* Texto blanco para contraste 
+  }
+  
+  .navbar-violeta .nav-link:hover {
+    color: #d8b9ff; /* Violeta claro al pasar el mouse 
+  }
